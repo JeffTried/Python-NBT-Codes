@@ -46,4 +46,5 @@ name = mob[3]
 nbt = '{Items:[{Block:{name:"minecraft:lever",states:{lever_direction:"down_east_west",open_bit:0b},version:17760256},Count:64b,Damage:0s,Name:"minecraft:lever",Slot:1b},{Count:1b,Damage:5s,Name:"minecraft:bucket",Slot:2b,tag:{EntityType:'+entID+',display:{Lore:["ID_DEC:'+dec+'", "ID_HEX:'+hex_+'", "ID_STRING:'+id_+'"],Name:"Bucket Of '+name+'"}}}]}'
 print ('TO GET COMMAND, USE [.nbt write] WHILE HOLDING A STORAGE ITEM (CHEST, FURNACE, DISPENSER\\DROPPER, ETC. THEN TAKE OUT THE PUFFERFISH FROM THE BLOCK AND PLACE IT DOWN TO SPAWN THE MOB\\ENTITY.')
 print (nbt)
-askCopyClip(nbt)
+if input("are you done y/n").lower() !='n':
+    r.destroy()
