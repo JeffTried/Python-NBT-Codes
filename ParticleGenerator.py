@@ -38,4 +38,5 @@ lore = '"'+particleID+':'+particleColor+':'+duration+'"'
 nbt = '{Items:[{Count:1b,Damage:5s,Name:"minecraft:bucket",Slot:2b,tag:{EntityType:95,Duration:'+duration+',DurationOnUse:'+duration+',InitialRadius:'+radius+'f,Invulnerable:1b,ParticleColor:'+particleColor+',ParticleId:'+particleID+',Pos:[6.5f,4.5f,8.5f],PotionId:11s,Radius:'+radius+'f,Persistant:1b,RadiusChangeOnPickup:0f,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:40,Rotation:[19.8044f,0f],Variant:0,definitions:["+minecraft:area_effect_cloud"],mobEffects:[],display:{Lore:['+lore+'],Name:"Custom Particle Generator"}}}],display:{Lore:['+lore+'],Name:"'+name+'"}}'
 print ('USE [.nbt write] ON A STORAGE BLOCK (CHEST, SHULKER, FURNACE, DISPENSER\\DROPPER) AND TAKE PUFFERFISH BUCKET OUT AND PLACE BUCKET DOWN TO USE')
 print (nbt)
-askCopyClip(nbt)
+if input("are you done y/n").lower() !='n':
+    r.destroy()
