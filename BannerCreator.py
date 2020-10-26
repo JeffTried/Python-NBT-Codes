@@ -1,11 +1,6 @@
 from tkinter import Tk
 def askCopyClip(nbt):
-    if input('COPY TEXT TO CLIPBOARD? (Y\\N) >').lower() != 'n':
-        r = Tk()
-        r.withdraw()
-        r.clipboard_clear()
-        r.clipboard_append(nbt)
-        r.update()
+    if input("are you done y/n").lower() !='n':
         r.destroy()
 patterns = {
     'Black Snout': 'pig',
