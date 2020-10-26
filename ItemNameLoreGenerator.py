@@ -91,4 +91,5 @@ while True:
 nbt = generate(name, lores)
 print ('TO SET NAME & LORE OF ITEM, USE [.nbt write] ON THE ITEM YOU WANT TO NAME & LORE')
 print (nbt)
-askCopyClip(nbt)
+if input("are you done y/n").lower() !='n':
+    r.destroy()
