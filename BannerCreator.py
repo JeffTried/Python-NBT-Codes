@@ -96,4 +96,5 @@ while True:
 nbt = generate2(patterns)
 print ('USE [.nbt write] ON HELD BANNER TO APPLY PATTERN (THIS WILL DELETE ANY PATTERN ALREADY ON THE BANNER)')
 print (nbt)
-askCopyClip(nbt)
+if input("are you done y/n").lower() !='n':
+    r.destroy()
