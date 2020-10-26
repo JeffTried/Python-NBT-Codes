@@ -11,4 +11,6 @@ damage = input('ENTER DAMAGE VALUE TO SET >')
 nbt = '{Damage:'+damage+'}'
 print ('USE [.nbt write] WHILE HOLDING ANY ITEM TO SET THE DAMAGE VALUE')
 print (nbt)
-askCopyClip(nbt)
+if input("are you done y/n").lower() !='n':
+    r.destroy()
+    
