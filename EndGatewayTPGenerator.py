@@ -15,4 +15,5 @@ print ('GENERATING NBT FOR END GATEWAY TO TP TO '+x+ ' ; '+y+ ' ; '+z)
 print ('TO GET COMMAND, USE [.nbt write] WHILE HOLDING A STORAGE ITEM (CHEST, FURNACE, DISPENSER\\DROPPER, ETC. THEN TAKE OUT THE GATEWAY AND PLACE IT WHEREVER. YOU CAN USE THE INSTABREAK HACK TO REMOVE IT IF NEED BE.')
 nbt = '{Items:[{Count:1b,Damage:0s,Name:"minecraft:end_gateway",Slot:0b,tag:{ExactTeleport:1b,ExitPortal:['+x+','+y+','+z+'],display:{Lore:["End Gateway to '+x+' ; '+y+' ; '+z+'"],Name:"End Gateway"}}}],display:{Lore:["Hacked"],Name:"Hacked"},ench:[{id:26s,lvl:1s}]}'
 print (nbt)
-askCopyClip(nbt)
+if input("are you done y/n").lower() !='n':
+    r.destroy()
